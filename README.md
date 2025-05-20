@@ -40,13 +40,12 @@ qrcode-terminal: Show QR code in terminal on first launch.
 
 🚀 Run the Application
 1. Start the WhatsApp Bot (Node.js)
-bash
-Копировать
-Редактировать
-node index.js
+   
+			bash
+			node index.js
 On first run, scan the QR code with WhatsApp on your phone.
 
-2. Start Spring Boot App
+3. Start Spring Boot App
  
 				bash
 				./mvnw spring-boot:run
