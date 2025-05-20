@@ -8,13 +8,9 @@ The Spring Boot service sends HTTP POST requests to the local Node server to tri
 
 ⚙️ How It Works
 🧠 Logic
-index.js connects to WhatsApp via Baileys.
-
-It exposes an HTTP API: POST /api/messages/send.
-
-Spring Boot app calls that API every Wednesday at 11:00 AM, sending a preformatted run announcement.
-
-The Node.js server receives the request and sends a message on WhatsApp.
+1. Spring Boot uses `Scheduled` to send a message **every Wednesday at 11:00 AM**
+2. It sends an HTTP POST request to the Node.js server (`index.js`)
+3. Node.js uses Baileys to send a WhatsApp message to the selected phone number or group
 
 
   Requirements:  
